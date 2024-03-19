@@ -21,6 +21,20 @@
     <meta property="og:image" content="img/icon.jpg">
 
     <style>
+      /* Стили для контейнера с текстом сверху кнопки */
+      .button-container {
+        position: relative; /* Позиционирование относительно родительского элемента */
+      }
+
+      /* Стили для текста сверху кнопки */
+      .button-text {
+        position: absolute; /* Абсолютное позиционирование */
+        top: -20px; /* Отступ сверху */
+        left: 0; /* Выравнивание по левому краю */
+        font-size: 12px; /* Размер шрифта */
+        color: #666; /* Цвет текста */
+      }
+      
       /* Стили для кнопки */
       .custom-button {
         display: inline-block;
@@ -113,6 +127,11 @@
         </section>
         <!-- CYBER -->
         <section class="CyberGuard-project" id="about">
+          <div class="button-container">
+            <div class="button-text">BETA</div>
+          <div style="text-align: center;">
+           <button class="custom-button" onclick="window.location.href = 'https://zeosweb.vercel.app//';">CYBER-network-sec</button>
+          </div>
           <div style="text-align: center;">
            <button class="custom-button" onclick="window.location.href = 'https://zeos.vercel.app/';">ZEOS</button>
           </div>
