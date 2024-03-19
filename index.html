@@ -20,6 +20,26 @@
     <meta property="og:title" content="Stanislav M.">
     <meta property="og:image" content="img/icon.jpg">
 
+    <style>
+      /* Стили для кнопки */
+      .custom-button {
+        display: inline-block;
+        background-color: #4CAF50; /* Цвет фона */
+        color: white; /* Цвет текста */
+        padding: 10px 20px; /* Отступы внутри кнопки */
+        font-size: 16px; /* Размер шрифта */
+        border: none; /* Убираем границу */
+        cursor: pointer; /* Курсор при наведении */
+        border-radius: 5px; /* Закругленные углы */
+        text-decoration: none; /* Убираем подчеркивание у ссылки */
+        transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+      }
+
+      /* Стили для кнопки при наведении */
+      .custom-button:hover {
+        background-color: #45a049; /* Новый цвет фона при наведении */
+      }
+    </style>
   </head>
   <body>
     <header id="navbar">
@@ -93,7 +113,7 @@
         <!-- CYBER -->
         <section class="CyberGuard-project" id="about">
           <div style="text-align: center;">
-           <button onclick="window.location.href = 'https://zeos.vercel.app/';">ZEOS</button>
+           <button class="custom-button" onclick="window.location.href = 'https://zeos.vercel.app/';">ZEOS</button>
           </div>
         </section>
 
