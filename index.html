@@ -226,7 +226,11 @@
         <script type="text/javascript">
               function soundClick() {
   	            var audio = document.getElementById('audio');
-                audio.play();
+                if (audio.paused) {
+                    audio.play(); // Если аудио на паузе, запускаем воспроизведение
+                } else {
+                    audio.pause(); // Если аудио воспроизводится, ставим на паузу
+                }
             }
             </script>
     </body>
