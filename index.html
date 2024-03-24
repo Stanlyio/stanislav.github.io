@@ -87,6 +87,18 @@
       .github-link:hover {
         text-decoration: underline; /* Добавляем подчеркивание при наведении */
       }
+       /* Стили для анимации с цифрами fall */
+      @keyframes fall {
+          from {
+              transform: translateY(-100vh);
+          }
+          to {
+              transform: translateY(100vh);
+          }
+      }
+        .falling-numbers span {
+            animation: fall linear infinite; /* Добавляем анимацию с бесконечным повторением */
+        }
         /* Стили для анимации с цифрами */
         .falling-numbers {
             position: absolute;
