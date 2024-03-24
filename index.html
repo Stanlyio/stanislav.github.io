@@ -104,7 +104,7 @@
           color: #00ff00; /* Зеленый цвет, как в фильме */
           font-family: "MatrixFont", monospace; /* Используйте шрифт, имитирующий стиль "Матрицы" */
           font-size: 20px; /* Увеличьте размер цифр */
-          animation: falling-animation linear infinite; /* Анимация падения */
+          animation: falling-animation linear infinite fade-out linear forwards; /* Анимация падения */
       }
 
       @keyframes falling-animation {
@@ -113,6 +113,15 @@
           }
           100% {
                 transform: translateY(100vh);
+          }
+      }
+
+      @keyframes fade-out {
+          0% {
+              opacity: 1; /* Полная видимость в начале */
+          }
+          100% {
+                opacity: 0; /* Полное исчезновение в конце */
           }
       }
     </style>
