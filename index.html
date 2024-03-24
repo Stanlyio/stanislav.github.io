@@ -87,36 +87,34 @@
       .github-link:hover {
         text-decoration: underline; /* Добавляем подчеркивание при наведении */
       }
-       /* Стили для анимации с цифрами fall */
-      @keyframes fall {
-          from {
-              transform: translateY(-100vh);
+      /* Стили для Matrix */
+      .falling-numbers {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          pointer-events: none;
+          overflow: hidden;
+      }
+
+      .falling-numbers span {
+          position: absolute;
+          color: #00ff00; /* Зеленый цвет, как в фильме */
+          font-family: "MatrixFont", monospace; /* Используйте шрифт, имитирующий стиль "Матрицы" */
+          font-size: 20px; /* Увеличьте размер цифр */
+          animation: falling-animation linear infinite; /* Анимация падения */
+      }
+
+      @keyframes falling-animation {
+          0% {
+              transform: translateY(0);
           }
-          to {
-              transform: translateY(100vh);
+          100% {
+                transform: translateY(100vh);
           }
       }
-        .falling-numbers span {
-            animation: fall linear infinite; /* Добавляем анимацию с бесконечным повторением */
-        }
-        /* Стили для анимации с цифрами */
-        .falling-numbers {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 9999;
-            pointer-events: none;
-            overflow: hidden;
-        }
-        .falling-numbers span {
-            position: absolute;
-            font-size: 16px;
-            color: #006400;
-            pointer-events: none;
-            user-select: none;
-        }
     </style>
   </head>
   <body>
