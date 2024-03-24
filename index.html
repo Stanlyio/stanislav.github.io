@@ -269,21 +269,23 @@
                 }
             }
             </script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const NUMBERS_COUNT = 50; // Количество падающих цифр
-            const MIN_SIZE = 10; // Минимальный размер цифры
-            const MAX_SIZE = 30; // Максимальный размер цифры
-            const SPEED = 2; // Скорость падения цифр
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const NUMBERS_COUNT = 50; // Количество падающих цифр
+                    const MIN_SIZE = 10; // Минимальный размер цифры
+                    const MAX_SIZE = 30; // Максимальный размер цифры
+                    const SPEED = 2; // Скорость падения цифр
 
-            for (let i = 0; i < NUMBERS_COUNT; i++) {
-                const number = document.createElement("span");
-                number.textContent = Math.random() > 0.5 ? "1" : "0"; // Случайно выбираем 1 или 0
-                number.style.left = `${Math.random() * 100}vw`; // Случайное положение по горизонтали
-                number.style.top = `${Math.random() * 100}vh`; // Случайное положение по вертикали
-                number.style.fontSize = `${Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE}px`; // Случайный размер
-                number.style.animationDuration = `${Math.random() * SPEED + SPEED}s`; // Скорость анимации
-                document.querySelector(".falling-numbers").appendChild(number);
-            }
-        });
+                    for (let i = 0; i < NUMBERS_COUNT; i++) {
+                        const number = document.createElement("span");
+                        number.textContent = Math.random() > 0.5 ? "1" : "0"; // Случайно выбираем 1 или 0
+                        number.style.left = `${Math.random() * 100}vw`; // Случайное положение по горизонтали
+                        number.style.top = `${Math.random() * 100}vh`; // Случайное положение по вертикали
+                        number.style.fontSize = `${Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE}px`; // Случайный размер
+                        number.style.animationDuration = `${Math.random() * SPEED + SPEED}s`; // Скорость анимации
+                        document.querySelector(".falling-numbers").appendChild(number);
+                    }
+                });
+          </script>
     </body>
 </html>
