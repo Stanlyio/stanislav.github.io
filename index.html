@@ -87,6 +87,24 @@
       .github-link:hover {
         text-decoration: underline; /* Добавляем подчеркивание при наведении */
       }
+      /* Стили для анимации с цифрами */
+      .falling-numbers {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 9999;
+          pointer-events: none;
+          overflow: hidden;
+      }
+      .falling-numbers span {
+          position: absolute;
+          font-size: 16px;
+          color: #fff;
+          pointer-events: none;
+          user-select: none;
+      }
     </style>
   </head>
   <body>
@@ -116,7 +134,8 @@
           </div>
         </nav>
     </header>
-        
+        <!-- Падающие цифры -->
+        <div class="falling-numbers"></div> 
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
@@ -250,5 +269,21 @@
                 }
             }
             </script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const NUMBERS_COUNT = 50; // Количество падающих цифр
+            const MIN_SIZE = 10; // Минимальный размер цифры
+            const MAX_SIZE = 30; // Максимальный размер цифры
+            const SPEED = 2; // Скорость падения цифр
+
+            for (let i = 0; i < NUMBERS_COUNT; i++) {
+                const number = document.createElement("span");
+                number.textContent = Math.random() > 0.5 ? "1" : "0"; // Случайно выбираем 1 или 0
+                number.style.left = `${Math.random() * 100}vw`; // Случайное положение по горизонтали
+                number.style.top = `${Math.random() * 100}vh`; // Случайное положение по вертикали
+                number.style.fontSize = `${Math.random() * (MAX_SIZE - MIN_SIZE) + MIN_SIZE}px`; // Случайный размер
+                number.style.animationDuration = `${Math.random() * SPEED + SPEED}s`; // Скорость анимации
+                document.querySelector(".falling-numbers").appendChild(number);
+            }
+        });
     </body>
 </html>
