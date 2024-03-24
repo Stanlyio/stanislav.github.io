@@ -315,14 +315,6 @@
 
                     // Вызываем функцию для создания падающих цифр
                     createFallingNumbers();
-
-                    // Обработчик события, который будет вызывать функцию создания падающих цифр после завершения анимации
-                    document.querySelector(".falling-numbers").addEventListener("animationiteration", function() {
-                        // Очищаем контейнер перед созданием новых цифр
-                        document.querySelector(".falling-numbers").innerHTML = "";
-                        // Создаем новые падающие цифры
-                        createFallingNumbers();
-                    });
                 });
             </script>
     </body>
