@@ -70,11 +70,12 @@
     </style>
   </head>
   <body>
-    <!-- Код для вставки фоновой музыки -->
-    <audio autoplay loop>
-      <source src="music.mp3" type="audio/mpeg">
-      Ваш браузер не поддерживает элемент audio.
-    </audio>
+    <!-- код для фоновой музыки и кнопки воспроизведения -->
+    <div align="center">
+        <audio src="music.mp3" id="audio"></audio>
+    
+        <button type="button" class="buttonSwagee" onclick="soundClick()">PLAY MP3</button>
+    </div>
     <header id="navbar">
       <nav class="navbar-container container">
         <div class="logo">
@@ -223,5 +224,11 @@
         
         <script src="js/index.js"></script>
         <!-- Throw it in for coffee :D or BTC :) bc1qm0tkr6zks3yw0jqvgj656z27jauhg2eu84p7xu  -->
+        <script type="text/javascript">
+              function soundClick() {
+  	            var audio = document.getElementById('audio');
+                audio.play();
+            }
+            </script>
     </body>
 </html>
