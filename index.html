@@ -88,13 +88,13 @@
         text-decoration: underline; /* подчеркивание при наведении */
       }
       .scrolling-container {
-          overflow: hidden; /* Скрытие контента, выходящего за пределы контейнера */
-          position: relative; /* Позиционирование контейнера */
-          width: 100%; /* Ширина контейнера */
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap; /* Запрещаем перенос строк */
       }
 
       .scrolling-content {
-          display: flex; /* Использование flexbox для расположения элементов в ленте */
+          display: inline-block; /* Использование flexbox для расположения элементов в ленте */
           animation: scroll 20s linear infinite; /* Анимация прокрутки */
       }
 
@@ -163,8 +163,6 @@
                 </div>
             </div> <!-- / what i do -->
         </section>
-        
-        
         <!-- about -->
         <section class="about-me" id="about">
            <h2 class="section__title section__title--about">whoami</h2>
