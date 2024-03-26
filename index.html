@@ -90,13 +90,14 @@
       .scrolling-container {
           width: 100%;
           overflow-х: auto;
-          white-space: nowrap; /* Запрещаем перенос строк */
       }
-      
+      .scrolling-content {
+          white-space: nowrap;
+          animation: scroll 10s linear infinite; /* Анимация прокрутки */
+      }
       .scrolling-content {
           width: 280px; /* Ширина изображения */
           height: auto; /* Автоматическая высота для сохранения пропорций */
-          display: inline-block; /* Использование flexbox для расположения элементов в ленте */
           margin-right: 10px; /* Пространство между изображениями */
       }
       
