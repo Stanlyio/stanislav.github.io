@@ -87,48 +87,6 @@
       .github-link:hover {
         text-decoration: underline; /* подчеркивание при наведении */
       }
-      /* Стили для Matrix */
-      .falling-numbers {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          z-index: 9999;
-          pointer-events: none;
-          overflow: hidden;
-      }
-
-      .falling-numbers span {
-          position: absolute;
-          color: #ff0202; /* Красный цвет */
-          font-family: "MatrixFont", monospace; /* шрифт */
-          font-size: 20px; /* Увеличьте размер цифр */
-          animation: falling-animation linear infinite; /* Анимация падения */
-      }
-
-      @keyframes falling-animation {
-          0% {
-              transform: translateY(0);
-          }
-          100% {
-                transform: translateY(100vh);
-          }
-      }
-
-      @keyframes fade-out {
-          0% {
-              transform: translateY(-100%);
-              opacity: 1; /* Полная видимость в начале */
-          }
-          90% {
-               opacity: 1; /* Полное исчезновение в конце */
-          }
-          100% {
-                transform: translateY(100vh);
-                opacity: 0; /* Полное исчезновение в конце */
-          }
-      }
     </style>
   </head>
   <body>
@@ -153,19 +111,17 @@
               <li class="navbar-item">
                     <div align="center">
                         <audio src="music.mp3" id="audio" autoplay loop></audio>
-                        <button type="button" class="custom-button1" onclick="soundClick()">►MP3</button>
+                        <button type="button" class="custom-button1" onclick="soundClick()">▶️MP3</button>
             </ul>
           </div>
         </nav>
     </header>
-        <!-- Падающие цифры -->
-        <div class="falling-numbers"></div> 
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
                 <span>Hi, I am</span><strong>Stanislav M.</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">stanlyio x[{26}]</p>
+            <p class="section__subtitle section__subtitle--intro">...</p>
             <img src="img/profile.jpg" alt="Do good, but not to your own detriment" class="intro__img">
         </section>
         <!-- what I do -->
@@ -197,8 +153,6 @@
            
            <div class="about-me__body">
                <p>I have a Master's degree in "Information Technology", specifically <strong>Administration, Management and Protection of Computer Networks and Systems</strong>.  I have extensive experience in various <strong>cyber-security</strong> applications and more.</p><p> I am currently a <strong>cybersecurity infrastructure administrator (SOC/iTSec)</strong> for a large organization (10000+). In addition, I also do a bit of programming. I maintain several public channels on Telegram: <strong>@cyberseeya</strong> <a class="github-link" href="https://t.me/cyberseeya">(iTSec notes)</a>, <strong>@lifelovepeace</strong> <a class="github-link" href="https://t.me/lifelovepeace">(motivations)</a> and others: <a class="github-link" href="https://t.me/keebeer">Keebeer</a>, <a class="github-link" href="https://t.me/+MLv2oswXa1xkYTE6">SolyBiT</a>, <a class="github-link" href="https://t.me/cyberiopro">Cyberio.pro</a>. </p><p>My global plans are to create an iT architecture for <strong>"kidsguard"</strong> in the internet segment <a class="github-link" href="https://github.com/kidsguard">(project roadmap is on github)</a>. </p><p>Never stop learning and exploring new fields</p>
-           </div>
-           <div class="about-me__body">
                <p>At the moment I am developing a portal <strong>Network security cyber guard</strong> release is planned for May 2024, the project is stored here <a class="github-link" href="https://github.com/stamiz-com/network-security-cyber-guard/tree/main">Github</a></p>
            </div>
         </section>
@@ -208,7 +162,7 @@
            <button class="custom-button" onclick="window.location.href = 'https://zeosweb.vercel.app//';">CYBER-network-sec</button>
           </div>
           <div style="text-align: center;">
-           <button class="custom-button" onclick="window.location.href = 'https://zeos.vercel.app/';">ZEOS</button>
+           <button class="custom-button" onclick="window.location.href = 'https://zeos.vercel.app/';">PROJECTs</button>
           </div>
         </section>
 
