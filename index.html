@@ -89,15 +89,20 @@
       }
       .scrolling-container {
           width: 100%;
-          overflow: hidden;
+          overflow-х: scroll;
           white-space: nowrap; /* Запрещаем перенос строк */
       }
 
       .scrolling-content {
           display: inline-block; /* Использование flexbox для расположения элементов в ленте */
-          animation: scroll 20s linear infinite; /* Анимация прокрутки */
       }
-
+      
+      .scrolling-content {
+          width: 280px; /* Ширина изображения */
+          height: auto; /* Автоматическая высота для сохранения пропорций */
+          margin-right: 10px; /* Пространство между изображениями */
+      }
+      
       @keyframes scroll {
           0% {
               transform: translateX(0); /* Начальное положение */
@@ -194,7 +199,8 @@
             <div class="scrolling-container">
                 <div class="scrolling-content">
                     <!-- Ваш контент здесь -->
-                    <img src="img/cisco.png"> <"img/tryhackme.png">
+                    <img src="img/cisco.png">
+                    <img src="img/tryhackme.png">
                 </div>
             </div>
         </section>       
