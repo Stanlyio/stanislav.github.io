@@ -89,17 +89,11 @@
       }
       .scrolling-container {
           width: 100%;
-          overflow-х: auto;
-          white-space: nowrap;
+          overflow: hidden;
       }
       .scrolling-content {
           white-space: nowrap;
           animation: scroll 10s linear infinite; /* Анимация прокрутки */
-      }
-      .scrolling-content {
-          width: 280px; /* Ширина изображения */
-          height: auto; /* Автоматическая высота для сохранения пропорций */
-          margin-right: 10px; /* Пространство между изображениями */
       }
       
       @keyframes scroll {
@@ -110,6 +104,12 @@
                 transform: translateX(-100%); /* Конечное положение (прокрутка влево на 100%) */
           }
       }
+      .scrolling-content {
+          display: inline-block;
+          vertical-align: top;
+          max-height: 100px;
+          margin-right: 10px;
+      } 
     </style>
   </head>
   <body>
