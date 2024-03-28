@@ -420,11 +420,6 @@ p strong{
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-    display: grid;
-    grid-template-areas: 
-        "title img"
-        "subtitle img"
-        "text img";
         grid-column-gap: 2em;
     }
     .section__title--about {
