@@ -420,10 +420,9 @@ p strong{
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-        grid-column-gap: 2em;
     }
     .section__title--about {
-        grid-area: center;
+        text-align: center;
     }   
     .section__title--about {
         position: relative;
