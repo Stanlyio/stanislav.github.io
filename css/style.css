@@ -420,14 +420,11 @@ p strong{
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
-}
-@media (min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
+    display: grid;
+    grid-template-areas: 
+        "title img"
+        "subtitle img"
+        "text img";
         grid-column-gap: 2em;
     }
     .section__title--about {
@@ -440,8 +437,6 @@ p strong{
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-    
-}
 
 /* My Work */
 
