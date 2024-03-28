@@ -421,7 +421,9 @@ p strong{
     margin: 0 auto;
     text-align: center;
 }
-   
+    .section__title--about {
+        grid-area: title;
+    }   
     .section__title--about {
         position: relative;
         left: -1em;
