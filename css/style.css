@@ -450,11 +450,6 @@ p strong{
         padding-right: calc(200px + 4em);
     }
     
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
 }
 
 /* My Work */
