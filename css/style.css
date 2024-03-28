@@ -419,6 +419,7 @@ p strong{
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    text-align: center;
 }
    
     .section__title--about {
