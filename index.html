@@ -109,7 +109,19 @@
           vertical-align: top;
           max-height: 100px;
           margin-right: 10px;
-      } 
+      }
+
+      .image-row {
+          display: flex;
+          justify-content: center; /* Центрируем изображения по горизонтали */
+          align-items: center; /* Выравниваем изображения по вертикали */
+      }
+
+      .image-row img {
+          margin: 5px; /* Добавляем небольшие отступы между изображениями */
+          max-width: 100%; /* Обеспечиваем, чтобы изображения не выходили за пределы контейнера */
+          height: auto; /* Позволяем изображениям масштабироваться пропорционально */
+      }
     </style>
   </head>
   <body>
@@ -196,10 +208,10 @@
             <p class="section__subtitle section__subtitle--work">A selection of my range of certificates</p>
             
             <div class="scrolling-container">
-                <div class="scrolling-content">
-                    <!-- Ваш контент здесь -->
-                    <img src="img/cisco.png" alt="cisco">
-                    <img src="img/tryhackme.png" alt="tryhackme">
+                <div class="image-row">
+                    <img src="cisco.png" alt="Image 1">
+                    <img src="BIT.jpg" alt="Image 2">
+                    <img src="tryhackme.png" alt="Image 3">
                 </div>
             </div>
         </section>       
